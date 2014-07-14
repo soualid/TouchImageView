@@ -720,7 +720,8 @@ public class TouchImageView extends ImageView {
     	this.state = state;
     }
     
-    public boolean canScrollHorizontallyFroyo(int direction) {
+    @TargetApi(14)
+	public boolean canScrollHorizontallyFroyo(int direction) {
         return canScrollHorizontally(direction);
     }
     
